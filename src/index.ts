@@ -69,6 +69,7 @@ let unionArr: (string | number)[] = []; // Its only string and number array
 // Object
 let d: object;
 d = { a: "hello" };
+d = [];
 
 let e: {
   name: string;
