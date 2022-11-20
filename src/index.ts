@@ -42,3 +42,43 @@ let person = {
 };
 
 person.name = "sakib"; // If provides 55 || Number or other any type then returns an error
+
+// Explicit & Union Types
+
+// Explicit Types ==>
+let a: string;
+let b: number;
+
+a = "salman"; // If provides 55 || Number or other any type then returns an error
+b = 21; // If provides "string" || String or other any type then returns an error
+
+//  Union Type ==>
+let c: string | number;
+
+c = "salman";
+c = 15;
+// If provides true || boolean or other any type then returns an error
+
+// Array
+// Explicit Types ==>
+let arr: string[] = []; // Its only string array
+
+// Union Type
+let unionArr: (string | number)[] = []; // Its only string and number array
+
+// Object
+let d: object;
+d = { a: "hello" };
+
+let e: {
+  name: string;
+  age: number;
+  adult: boolean;
+};
+
+e = {
+  name: "salmna",
+  age: 22,
+  adult: true,
+};
+// If provides other any object schema then returns an error
