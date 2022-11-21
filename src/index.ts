@@ -83,3 +83,23 @@ e = {
   adult: true,
 };
 // If provides other any object schema then returns an error
+
+// Dynamic Type
+
+let an: any;
+an = 5;
+an = "string";
+
+let anr: any[] = [];
+anr.push(5);
+anr.push("Bangladesh");
+
+let ano: {
+  name: any;
+  age: any;
+};
+
+ano= {
+  name: "Bangladesh",
+  age: 66
+}
