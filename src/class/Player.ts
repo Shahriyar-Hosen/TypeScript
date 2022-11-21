@@ -55,3 +55,8 @@ const res1: APIRes<object> = {
     something: 300,
   },
 };
+
+// Tuples
+
+let a = [3, "hello", { p: 3 }];
+let b: [number, string, object] = [3, "hello", { p: 3 }];

@@ -39,3 +39,6 @@ const res1 = {
         something: 300,
     },
 };
+// Tuples
+let a = [3, "hello", { p: 3 }];
+let b = [3, "hello", { p: 3 }];
