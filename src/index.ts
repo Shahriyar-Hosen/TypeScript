@@ -196,16 +196,20 @@ userDetail = (
 // Module System
 
 import { Player } from "./class/Player.js";
+import { IsPlayer } from "./interfaces/isPlayer.js";
 
 const mashrafi = new Player("Mashrafi", 40, "Bangladesh");
-const sakib = new Player("sakib", 40, "Bangladesh");
+
+let sakib: IsPlayer;
+
+sakib = new Player("sakib", 36, "Bangladesh");
 
 const players: Player[] = [];
 
 players.push(mashrafi);
-players.push(sakib);
+// players.push(sakib);
 
-console.log(players);
+// console.log(players);
 
 // Interfaces
 
