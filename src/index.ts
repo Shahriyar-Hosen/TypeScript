@@ -127,3 +127,34 @@ const userDetails = (id: stringOrNum, user: userType) => {
 const sayHello = (user: userType) => {
   console.log(`Hello ${user.age > 50 ? "Sir" : "Mr."}`);
 };
+
+// Function Signatures
+let calculation: (x: number, y: number, z: string) => number;
+
+calculation = (a: number, b: number, c: string) => {
+  if (c === "add") {
+    return a + b;
+  } else {
+    return a - b;
+  }
+};
+
+console.log(calculation(1, 3, "minus"));
+
+let userDetail: (
+  id: number | string,
+  userInfo: {
+    name: string;
+    age: number;
+  }
+) => void;
+
+userDetail = (
+  id: number | string,
+  info: {
+    name: string;
+    age: number;
+  }
+) => {
+  console.log(`User Id: ${id}, User Info: ${info}`);
+};
