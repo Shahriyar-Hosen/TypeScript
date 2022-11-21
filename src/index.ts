@@ -161,37 +161,38 @@ userDetail = (
 
 // TypeScript Classes
 
-class Player {
-  /*
-  name: string;
-  age: number;
-  country: string;
+// class Player {
+//   /*
+//   name: string;
+//   age: number;
+//   country: string;
 
-  constructor(n: string, a: number, c: string) {
-      this.name = n;
-      this.age = a;
-      this.country = c;
-    } 
-  */
+//   constructor(n: string, a: number, c: string) {
+//       this.name = n;
+//       this.age = a;
+//       this.country = c;
+//     }
+//   */
 
-  // Access Modifiers
-  /* 
-   // By default Public
-  private name: string;
-  public age: number;
-  readonly country: string;
-  */
-  constructor(
-    // By default Public
-    private name: string,
-    public age: number,
-    readonly country: string
-  ) {}
+//   // Access Modifiers
+//   /*
+//    // By default Public
+//   private name: string;
+//   public age: number;
+//   readonly country: string;
+//   */
+//   constructor(
+//     // By default Public
+//     private name: string,
+//     public age: number,
+//     readonly country: string
+//   ) {}
 
-  Play() {
-    console.log(`${this.name} from ${this.country} is Player`);
-  }
-}
+//   Play() {
+//     console.log(`${this.name} from ${this.country} is Player`);
+//   }
+// }
+import { Player } from "./class/Player.js";
 
 const mashrafi = new Player("Mashrafi", 40, "Bangladesh");
 const sakib = new Player("sakib", 40, "Bangladesh");
@@ -200,3 +201,5 @@ const players: Player[] = [];
 
 players.push(mashrafi);
 players.push(sakib);
+
+console.log(players);
