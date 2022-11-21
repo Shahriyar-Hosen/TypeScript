@@ -122,6 +122,7 @@ userDetail = (id, info) => {
 //     console.log(`${this.name} from ${this.country} is Player`);
 //   }
 // }
+// Module System
 import { Player } from "./class/Player.js";
 const mashrafi = new Player("Mashrafi", 40, "Bangladesh");
 const sakib = new Player("sakib", 40, "Bangladesh");
@@ -129,3 +130,13 @@ const players = [];
 players.push(mashrafi);
 players.push(sakib);
 console.log(players);
+function drawRectangle(option) {
+    let width = option.width;
+    let length = option.length;
+}
+let threeDOption = {
+    width: 30,
+    length: 50,
+    height: 10,
+};
+drawRectangle(threeDOption);
