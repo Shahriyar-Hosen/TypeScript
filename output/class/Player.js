@@ -11,3 +11,14 @@ export class Player {
         console.log(`${this.name} from ${this.country} is Player`);
     }
 }
+// Generics
+const addID = (obj) => {
+    let id = Math.floor(Math.random() * 100);
+    return Object.assign(Object.assign({}, obj), { id });
+};
+let user = addID({
+    name: "Mahsrafi",
+    age: 38,
+    country: "Bangladesh",
+});
+addID(user);
