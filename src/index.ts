@@ -99,7 +99,18 @@ let ano: {
   age: any;
 };
 
-ano= {
+ano = {
   name: "Bangladesh",
-  age: 66
-}
+  age: 66,
+};
+
+// Functions Type
+
+// number, string (void type if nothing is returned)
+const myFun = (a: number, b: number, c?: boolean, d: string = "OK"): number => {
+  console.log(`optional: ${c} & default value: ${d} `);
+
+  return a * b;
+};
+
+myFun(1, 2);
