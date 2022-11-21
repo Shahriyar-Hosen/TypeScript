@@ -162,15 +162,32 @@ userDetail = (
 // TypeScript Classes
 
 class Player {
+  /*
   name: string;
   age: number;
   country: string;
 
   constructor(n: string, a: number, c: string) {
-    this.name = n;
-    this.age = a;
-    this.country = c;
-  }
+      this.name = n;
+      this.age = a;
+      this.country = c;
+    } 
+  */
+
+  // Access Modifiers
+  /* 
+   // By default Public
+  private name: string;
+  public age: number;
+  readonly country: string;
+  */
+  constructor(
+    // By default Public
+    private name: string,
+    public age: number,
+    readonly country: string
+  ) {}
+
   Play() {
     console.log(`${this.name} from ${this.country} is Player`);
   }
