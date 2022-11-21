@@ -22,9 +22,18 @@ let user = addID({
     country: "Bangladesh",
 });
 addID(user);
+// Generics interface
+// Enum
+var RType;
+(function (RType) {
+    RType[RType["SUCCESS"] = 0] = "SUCCESS";
+    RType[RType["FAILURE"] = 1] = "FAILURE";
+    RType[RType["UNAUTHENTICATED"] = 2] = "UNAUTHENTICATED";
+    RType[RType["FORBIDDEN"] = 3] = "FORBIDDEN";
+})(RType || (RType = {}));
 const res1 = {
     status: 200,
-    type: "good",
+    type: RType.SUCCESS,
     data: {
         name: "test",
         something: 300,

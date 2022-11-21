@@ -32,16 +32,24 @@ let user = addID({
 addID(user);
 
 // Generics interface
+// Enum
+
+enum RType {
+  SUCCESS,
+  FAILURE,
+  UNAUTHENTICATED,
+  FORBIDDEN,
+}
 
 interface APIRes<T> {
   status: number;
-  type: string;
+  type: RType;
   data: T;
 }
 
 const res1: APIRes<object> = {
   status: 200,
-  type: "good",
+  type: RType.SUCCESS,
   data: {
     name: "test",
     something: 300,
