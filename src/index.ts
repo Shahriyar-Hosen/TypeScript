@@ -158,3 +158,28 @@ userDetail = (
 ) => {
   console.log(`User Id: ${id}, User Info: ${info}`);
 };
+
+// TypeScript Classes
+
+class Player {
+  name: string;
+  age: number;
+  country: string;
+
+  constructor(n: string, a: number, c: string) {
+    this.name = n;
+    this.age = a;
+    this.country = c;
+  }
+  Play() {
+    console.log(`${this.name} from ${this.country} is Player`);
+  }
+}
+
+const mashrafi = new Player("Mashrafi", 40, "Bangladesh");
+const sakib = new Player("sakib", 40, "Bangladesh");
+
+const players: Player[] = [];
+
+players.push(mashrafi);
+players.push(sakib);
