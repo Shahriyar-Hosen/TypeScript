@@ -22,3 +22,11 @@ let user = addID({
     country: "Bangladesh",
 });
 addID(user);
+const res1 = {
+    status: 200,
+    type: "good",
+    data: {
+        name: "test",
+        something: 300,
+    },
+};

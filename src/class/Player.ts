@@ -30,3 +30,20 @@ let user = addID({
 });
 
 addID(user);
+
+// Generics interface
+
+interface APIRes<T> {
+  status: number;
+  type: string;
+  data: T;
+}
+
+const res1: APIRes<object> = {
+  status: 200,
+  type: "good",
+  data: {
+    name: "test",
+    something: 300,
+  },
+};
